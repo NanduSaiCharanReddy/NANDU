@@ -28,6 +28,15 @@ body {
   height: 20px;
   margin-left: 20px;
 }
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
 
 .toggle-switch input {
   opacity: 0;
