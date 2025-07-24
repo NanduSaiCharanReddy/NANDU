@@ -6,144 +6,112 @@
   <title>Sai Charan Reddy - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-  <script>
+
+<script>
   const toggle = document.getElementById('darkModeToggle');
-  toggle.addEventListener('change', () => {
+  toggle?.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
   });
 </script>
 
 <body>
   <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">NANDU SAI CHARAN REDDY</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">NANDU SAI CHARAN REDDY</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <!-- 🌙 Dark Mode Toggle -->
-    <label class="toggle-switch">
-      <input type="checkbox" id="darkModeToggle" />
-      <span class="slider"></span>
-    </label>
-  </div>
-</nav>
-
-
-  <header class="hero">
-  <div class="hero-text">
-    <h1>Hi, I'm Nandu Sai Charan Reddy</h1>
-    <p>A passionate developer who loves building clean, modern websites.</p>
-    <div class="socials">
-      <a href="https://github.com/nandusaicharanreddy" target="_blank">GitHub</a>
-      <a href="mailto:screddyn@gmail.com">Email</a>
+      <!-- 🌙 Dark Mode Toggle -->
+      <label class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+      </label>
     </div>
-  </div>
-  <img src="profile.jpg" alt="Nandu" class="profile-pic">
-</header>
-  <section class="about" id="about">
-  <h2>About Me</h2>
-  <p>
-    Motivated Computer Science student with a strong foundation in Data Science.<br>
-    Proficient in object detection and data analysis.<br>
-    Seeking opportunities to apply academic knowledge in real-world projects and further develop technical skills.
-  </p>
-  <h3>Tech Stack</h3>
-  <div class="tech-stack">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Python</span>
-    <span>Data Science</span>
-    <span>Object Detection</span>
-    <span>Git</span>
-  </div>
-</section>
-  <section class="projects" id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
+  </nav>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Helmet Detection using YOLOv8</h3>
-      <p>
-        This project aims to automatically detect whether motorcyclists are wearing helmets using the YOLOv8 object detection model. Images or video frames are analyzed to identify motorcyclists and classify them as wearing or not wearing helmets. The system is trained using a labeled dataset and deployed using Python and tools like Google Colab and OpenCV. It helps improve road safety and enables smart surveillance and traffic law enforcement.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/helmet-detection" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Live Demo</a>
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Nandu Sai Charan Reddy</h1>
+      <p>A passionate developer who loves building clean, modern websites.</p>
+      <div class="socials">
+        <a href="https://github.com/nandusaicharanreddy" target="_blank">GitHub</a>
+        <a href="mailto:screddyn@gmail.com">Email</a>
       </div>
     </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3>PupilHeart: HRV Monitoring via Pupillary Fluctuations</h3>
-      <p>
-        PupilHeart introduces an innovative, non-invasive approach to monitoring Heart Rate Variability (HRV) by analyzing pupillary fluctuations using standard mobile device cameras. This groundbreaking method offers a convenient, contactless, and cost-effective alternative to traditional HRV measurement tools.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/pupilheart" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Live Demo</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-  <section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <p>
-    I'm currently open to work and collaboration opportunities. <br>
-    Feel free to reach out via email or connect with me below!
-  </p>
-  <div class="contact-links">
-    <a href="mailto:screddyn@gmail.com">📧 screddyn@gmail.com</a>
-    <a href="https://github.com/nandusaicharanreddy" target="_blank">💻 GitHub</a>
-    <a href="https://www.linkedin.com/in/nandusaicharan14" target="_blank">🔗 LinkedIn</a>
-  </div>
-</section>
-
-
-  <header>
-    <h1>Sai Charan Reddy</h1>
-    <img src="profile.jpg" alt="Sai Charan Reddy" class="profile-photo" />
-    <p>Computer Science & Data Science Student</p>
-    <p><a href="mailto:screddyn@gmail.com">screddyn@gmail.com</a> | <a href="https://linkedin.com/in/nandusaicharan14">LinkedIn</a></p>
+    <img src="profile.jpg" alt="Nandu" class="profile-pic">
   </header>
 
-  <section>
+  <!-- About Section -->
+  <section class="about" id="about">
     <h2>About Me</h2>
-    <p>Motivated Computer Science and Data Science student with hands-on experience in object detection and data analysis.</p>
+    <p>
+      Motivated Computer Science student with a strong foundation in Data Science.<br>
+      Proficient in object detection and data analysis.<br>
+      Seeking opportunities to apply academic knowledge in real-world projects and further develop technical skills.
+    </p>
+    <h3>Tech Stack</h3>
+    <div class="tech-stack">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Data Science</span>
+      <span>Object Detection</span>
+      <span>Git</span>
+    </div>
   </section>
 
-  <section>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
     <h2>Projects</h2>
-    <h3>Helmet Detection using YOLOv8</h3>
-    <p>Used YOLOv8 to detect helmet-less motorcyclists. Achieved 50% speed boost over previous models.</p>
+    <div class="project-grid">
 
-    <h3>PupilHeart</h3>
-    <p>Heart rate variability tracking using pupillary changes via mobile cameras. Focused on contactless monitoring.</p>
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Helmet Detection using YOLOv8</h3>
+        <p>
+          This project aims to automatically detect whether motorcyclists are wearing helmets using the YOLOv8 object detection model. Images or video frames are analyzed to identify motorcyclists and classify them as wearing or not wearing helmets. The system is trained using a labeled dataset and deployed using Python and tools like Google Colab and OpenCV. It helps improve road safety and enables smart surveillance and traffic law enforcement.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/helmet-detection" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>PupilHeart: HRV Monitoring via Pupillary Fluctuations</h3>
+        <p>
+          PupilHeart introduces an innovative, non-invasive approach to monitoring Heart Rate Variability (HRV) by analyzing pupillary fluctuations using standard mobile device cameras. This groundbreaking method offers a convenient, contactless, and cost-effective alternative to traditional HRV measurement tools.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/pupilheart" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <section>
-    <h2>Resume</h2>
-    <p><a href="resume/SaiCharan_Resume.pdf" download>Download My Resume</a></p>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      I'm currently open to work and collaboration opportunities. <br>
+      Feel free to reach out via email or connect with me below!
+    </p>
+    <div class="contact-links">
+      <a href="mailto:screddyn@gmail.com">📧 screddyn@gmail.com</a>
+      <a href="https://github.com/nandusaicharanreddy" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/nandusaicharan14" target="_blank">🔗 LinkedIn</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Skills & Certifications</h2>
-    <ul>
-      <li>Python (OOP, NumPy, Pandas, OpenCV)</li>
-      <li>SQL, DBMS</li>
-      <li>Machine Learning (NLP, Supervised Learning)</li>
-      <li>Cisco Python, C++ Institute, HackerRank - Python</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sai Charan Reddy</p>
-  </footer>
 </body>
 </html>
+
