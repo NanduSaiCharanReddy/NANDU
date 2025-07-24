@@ -7,12 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<script>
-  const toggle = document.getElementById('darkModeToggle');
-  toggle?.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
 
 <body>
   <nav class="navbar">
@@ -111,6 +105,17 @@
       <a href="https://www.linkedin.com/in/nandusaicharan14" target="_blank">🔗 LinkedIn</a>
     </div>
   </section>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById('darkModeToggle');
+    if (toggle) {
+      toggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>
